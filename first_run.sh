@@ -10,7 +10,7 @@ export LC_ALL=C
 RootDir=$(cd $(dirname $0); pwd)
 ShellDir="${RootDir}/shell"
 LogDir="${RootDir}/log"
-ScriptsDir="${RootDir}/scripts"
+ScriptsDir="${RootDir}/jd_scripts"
 List=
 
 
@@ -19,7 +19,7 @@ then
   echo "${ScriptsDir} 目录不存在，开始克隆..."
   echo
   cd ${RootDir}
-  git clone https://github.com/lxk0301/scripts
+  git clone https://github.com/yejianlong/jd_scripts
   echo
 else
   echo "${ScriptsDir} 目录已存在，跳过克隆..."
@@ -32,7 +32,7 @@ then
   echo "${ShellDir} 目录不存在，开始克隆..."
   echo
   cd ${RootDir}
-  git clone https://github.com/EvineDeng/jd-base shell
+  git clone https://github.com/hipye/jd-base shell
   echo
 else
   echo "${ShellDir} 目录已存在，跳过克隆..."
